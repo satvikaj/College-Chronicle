@@ -1,0 +1,128 @@
+/* Home.css */
+
+/* Apply the font only to elements in Home page */
+.containerhome {
+  font-family: 'Dancing Script', cursive; /* Specific font for Home page */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('C:/Users/itzsa/OneDrive/Desktop/miniproject/college/public/images/clg6.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensure the background image covers the entire container */
+}
+
+/* Container for Two-Column Layout */
+.containerhome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  padding: 20px;
+  position: relative;
+}
+
+/* Left Section (Logo, College Name, College Chronicle Title and Text) */
+.left-sectionhome {
+  flex: 1;
+  padding: 20px;
+  color: #eff2f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+}
+
+/* Logo and College Name */
+.left-sectionhome .logo-containerhome {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.left-sectionhome .logohome {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px; /* Spacing between logo and text */
+}
+
+.left-sectionhome .college-namehome {
+  font-size: 1.2rem; /* Adjusted size for readability */
+  font-weight: bold;
+  color: #eff2f5;
+}
+
+/* College Chronicle Title Styling */
+.college-chronicle-titlehome {
+  font-size: 3.5rem; /* Slightly larger font size */
+  font-weight: bold;
+  color: #eff2f5;
+  margin-top: -50px; /* Move title closer to the top */
+  margin-bottom: 10px; /* Adjust spacing below title */
+  font-family: 'Lucida Calligraphy', sans-serif; /* Cursive font */
+  text-align: left; /* Align title to the left */
+}
+
+/* Larger 'C' Styling */
+.college-chronicle-c-home {
+  font-size: 4.5rem; /* Larger 'C' */
+  margin-right: 5px;
+  font-family: 'Lucida Calligraphy', sans-serif;
+  color: #eff2f5;
+}
+
+/* Intro Text Styling */
+.intro-texthome {
+  margin-top: -5px; /* Adjust spacing relative to the title */
+  font-size: 1.2rem; /* Larger intro text for emphasis */
+  line-height: 1.2; /* Increase readability */
+  text-align: left; /* Ensure consistent alignment */
+  color: #eff2f5;
+  margin-left: 15px;
+}
+
+/* Login Button */
+.login-buttonhome {
+  position: absolute; /* Keep position fixed to the top-right */
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #0047ab;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-buttonhome:hover {
+  background-color: #003580;
+}
+
+/* Right Section (Carousel) */
+.right-sectionhome {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+}
+
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+}
+
+/* Style for text (legend) inside the image with enlarged background */
+.carousel .legendhome {
+  position: absolute;
+  bottom: 20px; /* Slightly above the image's bottom edge */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background for better visibility */
+  color: white;
+  padding: 5px 100px; /* Increased padding for a larger background */
+  font-size: 16px; /* Slightly larger font for better readability */
+  border-radius: 10px; /* Smooth rounded corners */
+  width: fit-content;
+  text-align: center;
+  z-index: 1; /* Ensure it overlays the image */
+}

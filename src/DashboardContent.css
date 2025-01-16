@@ -1,0 +1,114 @@
+.category-wrapper {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px; /* Added spacing between categories */
+}
+
+.category-icon img {
+  width: 100px; /* Ensure consistent sizing */
+  height: 100px;
+  object-fit: cover; /* Makes sure images fit nicely */
+  border: 2px solid #2980b9;
+  border-radius: 50%; /* Circular appearance */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth scaling and shadow */
+}
+
+.category-icon:hover img {
+  transform: scale(1.1); /* Enlarges slightly on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow for hover effect */
+}
+
+.sub-category-container {
+  position: absolute;
+  top: 90%; /* Adjusted to overlap slightly on the icon */
+  left: 50%; /* Centers dropdown relative to the icon */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  width: 180px; /* Slightly wider for better readability */
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; /* Smooth rounded corners */
+  padding: 10px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-category-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-category-container li {
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px; /* Optimized for readability */
+  color: #333; /* Better contrast */
+}
+
+.sub-category-container li:last-child {
+  border-bottom: none;
+}
+
+.sub-category-container li:hover {
+  background-color: #f0f0f0;
+  color: #2980b9; /* Adds a pop of color for hover */
+}
+
+.feed-section {
+  margin-top: 20px;
+}
+
+.feed-section h2 {
+  font-size: 1.8rem;
+  color: #2980b9;
+}
+
+.feed-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.feed-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.read-more-btn {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #1b6ea8;
+}
+
+@media screen and (max-width: 768px) {
+  .category-wrapper {
+    margin-bottom: 15px; /* Adjust spacing for smaller screens */
+  }
+
+  .sub-category-container {
+    width: 140px; /* Slightly narrower for smaller screens */
+  }
+
+  .sub-category-container li {
+    font-size: 12px; /* Reduce font size for smaller devices */
+    padding: 8px 10px;
+  }
+
+  .feed-item {
+    flex-direction: column;
+  }
+}
