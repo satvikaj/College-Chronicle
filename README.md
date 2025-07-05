@@ -6,20 +6,20 @@
 
 ## Features
 
--  **Role-Based Posting**  
-  Admins, faculty and coordinators can post notices or circulars based on their access level.
+- **Role-Based Posting**  
+  Admins, faculty, and coordinators can post notices or circulars based on their access level.
 
--  **Search & Filter**  
+- **Search & Filter**  
   Instantly find relevant posts by title, department, or user role.
 
 - **Google Calendar Integration**  
   Add events directly to your calendar with one click.
 
--**Smart Notifications**  
+- **Smart Notifications**  
   Users get timely updates about relevant new notices or deadline changes.
 
--**Authentication & Authorization**  
-  Secure login system for different user roles.
+- **Authentication & Authorization**  
+  Secure login system for different user roles (custom email/password logic).
 
 ---
 
