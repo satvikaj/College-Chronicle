@@ -1,6 +1,7 @@
 #  College Chronicle
+*A Full-Stack Web Application for Academic Communication & Event Management*
 
-**College Chronicle** is a full-stack web application designed to streamline the communication of academic circulars, event announcements, and deadline management within educational institutions. It provides a centralized platform with role-based access control for Admins, Faculty, and Coordinators. The application supports advanced filtering, secure authentication, and seamless Google Calendar integration via OAuth 2.0. By consolidating updates into one platform, it improves efficiency and engagement between students, faculty, and administrators.
+College Chronicle is a centralized platform designed to streamline the communication of academic circulars, event announcements, and deadline management within educational institutions. It provides a centralized platform with role-based access control for Admins, Faculty, and Coordinators. The application supports advanced filtering, secure authentication, and seamless Google Calendar integration via OAuth 2.0. By consolidating updates into one platform, it improves efficiency and engagement between students, faculty, and administrators.
 
 ---
 
