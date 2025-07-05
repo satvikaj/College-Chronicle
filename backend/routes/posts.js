@@ -10,9 +10,9 @@ const router = express.Router();
 router.use(cors());
 
 cloudinary.config({
-  cloud_name: 'dgx5gdx7k',  // Set in .env
-  api_key: '551457272212954', // Set in .env
-  api_secret: 'CsYSTVQfoTNvnUTzWMDTzCSdpac',
+  cloud_name: your cloud name,  // Set in .env
+  api_key: your api key, // Set in .env
+  api_secret: 'your api secret',
 });
 
 const path = require("path");
