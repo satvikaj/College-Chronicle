@@ -5,9 +5,9 @@ const path = require("path");
 
 // Configure Cloudinary
 cloudinary.config({
-  cloud_name: 'dgx5gdx7k',
-  api_key: '551457272212954',
-  api_secret: 'CsYSTVQfoTNvnUTzWMDTzCSdpac',
+  cloud_name: your cloud name,  // Set in .env
+  api_key: your api key, // Set in .env
+  api_secret: 'your api secret',
 });
 
 // Determine resource type for Cloudinary
