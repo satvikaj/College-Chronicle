@@ -1,0 +1,153 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Container for the form */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* File upload section */
+.file-upload {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.file-upload:hover {
+  border-color: #007BFF;
+}
+
+.file-upload label {
+  display: block;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Input fields */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Buttons */
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #25a7cf; /* Blue color for all buttons */
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4b75c4; /* Darker blue on hover */
+}
+
+button.cancel-button {
+  background-color: #eb3d57; /* Blue for cancel button as well */
+  color: white;
+}
+
+button.cancel-button:hover {
+  background-color: #c93737;
+}
+
+.remove-file {
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent; /* Ensure no background */
+  border: none; /* Remove any border */
+  padding: 0; /* Remove any extra padding */
+  outline: none; /* Remove focus outline */
+}
+
+.remove-file:hover {
+  color: darkred;
+}
+
+/* Popup overlay to darken the background */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup box */
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+/* Buttons inside the popup */
+.popup button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.popup .confirm-btn {
+  background: red;
+  color: white;
+}
+
+.popup .cancel-btn {
+  background: gray;
+  color: white;
+}

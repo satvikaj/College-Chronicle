@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: url("C:/Users/itzsa/OneDrive/Desktop/miniproject/college/public/images/background_login.jpg") center/cover no-repeat;
+}
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Slightly reduced opacity for darker overlay */
+  z-index: 0;
+}
+
+/* Login form styling */
+.login-form {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+/* Title styling */
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+/* Input fields styling */
+.form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+  position: relative; /* Ensure the container positions children relative to itself */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+}
+
+/* Password input container */
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-right: 2rem; /* Add space for the eye icon */
+}
+
+/* Password eye icon */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 65%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Login button styling */
+.login-button {
+  margin-top: 1rem;
+  width: 30%;
+  padding: 0.7rem;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #004a99;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}

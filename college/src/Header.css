@@ -1,0 +1,79 @@
+/* Fixed Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  height: 90px;
+  box-sizing: border-box;
+}
+
+/* Apply padding only when Header is present */
+body.with-header {
+  padding-top: 90px;
+}
+
+body {
+  margin: 0;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+/* College Name & Location */
+.college-textprofile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Icons Container - FIXED ALIGNMENT */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+  margin-right: -5px;
+}
+
+/* Icons */
+.profile-icon-button,
+.home-icon-button,
+.logout-icon-button {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+  object-fit: contain;
+  display: block;
+}
+
+/* Hover Effect */
+.profile-icon-button:hover,
+.home-icon-button:hover,
+.logout-icon-button:hover {
+  transform: scale(1.1);
+}
+
+/* Logout Button Specific Styling */
+.logout-icon-button {
+  background-color: transparent;
+}
